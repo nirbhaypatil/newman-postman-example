@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '18.18'
       - run:  npm install
-      - run: newman run reqres.postman_collection.json -e prod.postman_environment.json -r htmlextra --reporter-htmlextra-export report.html
+      - run: node_modules/newman/bin/newman.js run reqres.postman_collection.json -e prod.postman_environment.json -r htmlextra --reporter-htmlextra-export report.html
       
       - name: Publishing html report
         uses: actions/upload-artifact@v3
