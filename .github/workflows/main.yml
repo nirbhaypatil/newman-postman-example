@@ -13,3 +13,4 @@ jobs:
         with:
           node-version: '18.18'
       - run: npm install -g newman
+      - run: newman run reqres.postman_collection.json -e prod.postman_environment.json 
