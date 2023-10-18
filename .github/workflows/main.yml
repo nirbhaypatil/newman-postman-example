@@ -45,7 +45,7 @@ jobs:
           # Required recipients' addresses:
           to: nirbhay@groots.in
           # Required sender full name (address can be skipped):
-          from: nirbhay@groots.in # <user@example.com>
+          from: nirbhay patil #<user@example.com>
           # Optional plain body:
           body: Build job of ${{github.repository}} completed successfully!
           # Optional HTML body read from file:
